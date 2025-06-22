@@ -47,5 +47,5 @@ def render_seq(camera_name, start_frame, end_frame, filename):
 
     for x in range(start_frame, end_frame):
         cmds.currentTime(x)
-        arnoldRender(1280, 720, True, True, camera_name, ' -layer masterLayer -o {0}'.format(output_path))
+        arnoldRender(1280, 720, True, True, camera_name)
     print("Render Completed!")
